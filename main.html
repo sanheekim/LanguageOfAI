@@ -5,14 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>말하는 메모장</title>
+    <style>
+        #postit {
+            position:relative;
+            left:300px;
+            width:400px;
+            height:300px;
+            background-color:gray;
+        }
+        #redo, #save {
+            position:relative;
+            background-color:bisque;
+            top:310px;
+            left:280px;
+        }
+        #saveTb{ <!--왜 작동 안 하지?-->
+            position:relative;
+            left:0px;
+        }
+    </style>
 </head>
 <!--python django로 web page 만들어보자.-->
 <body>
     <button>기록</button> <!--1번 누르면 녹음, 1번 더 누르면 일시정지, 다시 누르면 녹음 재개-->
-    <input type="text"> <!-- 포스트잇처럼 꾸미고 폰트 모양 변경-->
-    <button>다시하기</button>
-    <button>저장</button>
-    <table> <!--최대 3개까지 보임. 최신날짜 ordering. -->
+    <div id="postit"> <!-- 포스트잇처럼 꾸미고 폰트 모양 변경-->
+    <button id="redo">다시하기</button>
+    <button id="save">저장</button>
+    <table id="saveTb"> <!--최대 3개까지 보임. 최신날짜 ordering. -->
         <th>저장게시판</th>
         <tr>
             <td>파일명</td>
