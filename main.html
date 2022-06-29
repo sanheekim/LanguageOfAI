@@ -34,31 +34,42 @@
             </div>
             <div id="down">            
                 <table id="saveTb"> <!--최대 3개까지 보임. 최신날짜 ordering. -->
-                    <th>저장게시판</th>
-                    <tr>
-                        <td>파일명</td>
-                        <td>날짜와 시간</td>
-                        <td>SNS 공유</td>
-                        <td>삭제</td>
-                    </tr>
-                    <tr>
-                        <td>가장 최신 녹음 저장본</td>
-                        <td></td>
-                        <td><button>공유</button></td>
-                        <td><button>삭제</button></td>
-                    </tr>
-                    <tr>
-                        <td>두 번째 녹음 저장본</td>
-                        <td></td>
-                        <td><button>공유</button></td>
-                        <td><button>삭제</button></td>
-                    </tr>
-                    <tr>
-                        <td>가장 옛날 녹음 저장본</td>
-                        <td></td>
-                        <td><button>공유</button></td>
-                        <td><button>삭제</button></td>
-                    </tr>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>저장게시판</th> <!--이걸 위에 div로 빼고-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>파일명</td>
+                            <td>날짜와 시간</td> <!--이것들을 th로 뺄까?-->
+                            <td>SNS 공유</td>
+                            <td>삭제</td>
+                        </tr>
+                        <tr>
+                            <td>가장 최신 녹음 저장본</td>
+                            <td></td>
+                            <td><button>공유</button></td>
+                            <td><button>삭제</button></td>
+                        </tr>
+                        <tr>
+                            <td>두 번째 녹음 저장본</td>
+                            <td></td>
+                            <td><button>공유</button></td>
+                            <td><button>삭제</button></td>
+                        </tr>
+                        <tr>
+                            <td>가장 옛날 녹음 저장본</td>
+                            <td></td>
+                            <td><button>공유</button></td>
+                            <td><button>삭제</button></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
