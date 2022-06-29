@@ -27,36 +27,48 @@
 </head>
 <!--python django로 web page 만들어보자.-->
 <body>
-    <button>기록</button> <!--1번 누르면 녹음, 1번 더 누르면 일시정지, 다시 누르면 녹음 재개-->
-    <div id="postit"> <!-- 포스트잇처럼 꾸미고 폰트 모양 변경-->
-    <button id="redo">다시하기</button>
-    <button id="save">저장</button>
-    <table id="saveTb"> <!--최대 3개까지 보임. 최신날짜 ordering. -->
-        <th>저장게시판</th>
-        <tr>
-            <td>파일명</td>
-            <td>날짜와 시간</td>
-            <td>SNS 공유</td>
-            <td>삭제</td>
-        </tr>
-        <tr>
-            <td>가장 최신 녹음 저장본</td>
-            <td></td>
-            <td><button>공유</button></td>
-            <td><button>삭제</button></td>
-        </tr>
-        <tr>
-            <td>두 번째 녹음 저장본</td>
-            <td></td>
-            <td><button>공유</button></td>
-            <td><button>삭제</button></td>
-        </tr>
-        <tr>
-            <td>가장 옛날 녹음 저장본</td>
-            <td></td>
-            <td><button>공유</button></td>
-            <td><button>삭제</button></td>
-        </tr>
-    </table>
+    <div id="all">
+        <div class="left">
+            <div id="up">
+                <button>기록</button> <!--1번 누르면 녹음, 1번 더 누르면 일시정지, 다시 누르면 녹음 재개-->
+            </div>
+            <div id="down">            
+                <table id="saveTb"> <!--최대 3개까지 보임. 최신날짜 ordering. -->
+                    <th>저장게시판</th>
+                    <tr>
+                        <td>파일명</td>
+                        <td>날짜와 시간</td>
+                        <td>SNS 공유</td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td>가장 최신 녹음 저장본</td>
+                        <td></td>
+                        <td><button>공유</button></td>
+                        <td><button>삭제</button></td>
+                    </tr>
+                    <tr>
+                        <td>두 번째 녹음 저장본</td>
+                        <td></td>
+                        <td><button>공유</button></td>
+                        <td><button>삭제</button></td>
+                    </tr>
+                    <tr>
+                        <td>가장 옛날 녹음 저장본</td>
+                        <td></td>
+                        <td><button>공유</button></td>
+                        <td><button>삭제</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <div id="postit"></div> <!-- 포스트잇처럼 꾸미고 폰트 모양 변경-->
+            <div id="btnSpace">
+                <button id="redo">다시하기</button>
+                <button id="save">저장</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
