@@ -32,7 +32,8 @@
             <div id="up">
                 <button>기록</button> <!--1번 누르면 녹음, 1번 더 누르면 일시정지, 다시 누르면 녹음 재개-->
             </div>
-            <div id="down">            
+            <div id="down">
+                <div>저장게시판</div>         
                 <table id="saveTb"> <!--최대 3개까지 보임. 최신날짜 ordering. -->
                     <colgroup>
                         <col>
@@ -41,16 +42,13 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>저장게시판</th> <!--이걸 위에 div로 빼고-->
+                            <th>파일명</th>
+                            <th>날짜와 시간</th>
+                            <th>SNS 공유</th>
+                            <th>삭제</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>파일명</td>
-                            <td>날짜와 시간</td> <!--이것들을 th로 뺄까?-->
-                            <td>SNS 공유</td>
-                            <td>삭제</td>
-                        </tr>
                         <tr>
                             <td>가장 최신 녹음 저장본</td>
                             <td></td>
