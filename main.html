@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>말하는 메모장</title>
     <style>
+        #all {
+            text-align: center;
+        }
+        #up {
+            position:relative;
+            left:-430px;
+            top:80px;
+        }
+        #down {
+            position:relative;
+            left:0px;
+            top:150px;
+        }
         #postit {
             position:relative;
-            left:300px;
+            left:50%;
+            top:-150px;
             width:400px;
             height:300px;
             background-color:gray;
@@ -16,12 +30,8 @@
         #redo, #save {
             position:relative;
             background-color:bisque;
-            top:310px;
-            left:280px;
-        }
-        #saveTb{ <!--왜 작동 안 하지?-->
-            position:relative;
-            left:0px;
+            top:-130px;
+            left:210px;
         }
     </style>
 </head>
@@ -33,8 +43,8 @@
                 <button>기록</button> <!--1번 누르면 녹음, 1번 더 누르면 일시정지, 다시 누르면 녹음 재개-->
             </div>
             <div id="down">
-                <div>저장게시판</div>         
-                <table id="saveTb"> <!--최대 3개까지 보임. 최신날짜 ordering. -->
+                <div style="text-align:center;background-color:burlywood;width:375.67px;">저장게시판</div>         
+                <table> <!--최대 3개까지 보임. 최신날짜 ordering. -->
                     <colgroup>
                         <col>
                         <col>
