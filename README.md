@@ -9,8 +9,11 @@
 3. cd ENV
 cd Scripts
 activate.bat
-까지 터미널에 입력하면 가상환경에 접속됨.
+을 입력하면 가상환경에 접속됨.
 이후 pip install django 로 장고 설치함.
 4. django-admin startproject myproject 으로 django project 생성.
+5. (가상환경 접속해서 cd myproject 한 상태)
+py manage.py startapp polls로 앱 생성
+
 
 ### 사용기술 : Google Cloud Speech API
