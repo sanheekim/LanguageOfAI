@@ -29,5 +29,8 @@ py manage.py startapp polls로 앱 생성
 8. Django는 DB 종류와 상관없이 DB작업을 할 수 있는 프레임워크. (settings.py의 DATABASES 확인)
 (가상환경 접속해서 cd myproject 한 상태)
 py manage.py migrate 할 것.
+9. 관리자계정 생성 : py manage.py createsuperuser (username/email/pw는 내가 지정.)
+10. 개발서버시작 : py manage.py runserver
+http://127.0.0.1:8000/admin/login 가면 관리자계정으로 로그인할 수 있음.
 
 ### 사용기술 : Google Cloud Speech API
