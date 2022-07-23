@@ -31,6 +31,7 @@ py manage.py startapp polls로 앱 생성
 py manage.py migrate 할 것.
 9. 관리자계정 생성 : py manage.py createsuperuser (username/email/pw는 내가 지정.)
 10. 개발서버시작 : py manage.py runserver
+개발서버종료 : Ctrl+C
 http://127.0.0.1:8000/admin/login 가면 관리자계정으로 로그인할 수 있음.
 
 ### 사용기술 : Google Cloud Speech API
