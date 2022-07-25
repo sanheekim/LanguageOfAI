@@ -31,8 +31,23 @@ def index(request):
     # return HttpResponse(template.render(context,request))
     return render(request, 'polls/index.html', context)
 
+# 404 에러 일으키기 (존재하지 않는 경로에 들어갔을 때 지정한 문구가 뜨도록 함)
+'''from django.http import Http404
+from django.shortcuts import render
+
 def detail(request, question_id):
-    return HttpResponse("You're looking at question %s." % question_id)
+    try:
+        question = Question.objects.get(pk=question_id)
+    except Question.DoesNotExist:
+        raise Http404("Question does not exist")
+    #return HttpResponse("You're looking at question %s." % question_id)
+    return render(request, 'polls/detail.html', {'question':question})'''
+
+# 404 에러 지름길: get_object_or_404()
+from django.shortcuts import get_object_or_404, render
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question.id)
+    return render(request, 'polls/detail.html', {'question':question})
 
 def results(request, question_id):
     response = "You're looking at the results of question %s."
