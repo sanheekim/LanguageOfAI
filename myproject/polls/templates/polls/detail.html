@@ -1,1 +1,11 @@
-{{ question }}
+<!--  {{ question }} -->
+
+<!-- 22.07.26 템플릿 시스템 사용하기
+ views.py 의 404 에러 지름길: get_object_or_404() 와 관련 있음.
+choice 추가는 admin.py -->
+<h1>{{ question.question_text }}</h1>
+<ul>
+    {% for choice in question.choice_set.all %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+</ul>
