@@ -3,9 +3,26 @@
 <!-- 22.07.26 템플릿 시스템 사용하기
  views.py 의 404 에러 지름길: get_object_or_404() 와 관련 있음.
 choice 추가는 admin.py -->
+<!--
 <h1>{{ question.question_text }}</h1>
 <ul>
     {% for choice in question.choice_set.all %}
         <li>{{ choice.choice_text }}</li>
     {% endfor %}
 </ul>
+-->
+
+<!-- 22.07.28 간단한 폼 쓰기-->
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}
+<fieldset>
+    <legend><h1>{{ question.question_text}}</h1></legend>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+    {% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+    {% endfor %}
+</fieldset>
+<input type="submit" value="Vote">
+</form>
