@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls/', include('polls.urls')), # polls의 urls.py와 views.py를 연결하려면 필요
+    # polls의 urls.py와 views.py를 연결하려면 필요
+    path('polls/', include('polls.urls')),
 ]
