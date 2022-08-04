@@ -81,21 +81,21 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 
-        # 아래부터는 제너릭 뷰 사용법
-        class IndexView(generic.ListView):
-            template_name = 'polls/index.html'
-            context_object_name = 'latest_question_list'
+# 아래부터는 제너릭 뷰 사용법
+class IndexView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
 
-            def get_queryset(self):
-                """Return the last five published questions."""
-                return Question.objects.order_by('-pub_date')[:5]
-
-
-        class DetailView(generic.DetailView):
-            model = Question
-            template_name = 'polls/detail.html'
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return Question.objects.order_by('-pub_date')[:5]
 
 
-        class ResultsView(generic.DetailView):
-            model = Question
-            template_name = 'polls/results.html'
+class DetailView(generic.DetailView):
+    model = Question
+    template_name = 'polls/detail.html'
+
+
+class ResultsView(generic.DetailView):
+    model = Question
+    template_name = 'polls/results.html'
