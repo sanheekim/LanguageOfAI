@@ -8,7 +8,7 @@ from .models import Choice, Question
 class ChoiceInline(admin.TabularInline):
     model = Choice
     extra = 3
-
+'''
 # 관리자 폼 커스터마이징(8/16)
 class QuestionAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -16,6 +16,13 @@ class QuestionAdmin(admin.ModelAdmin):
         ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
     ]
     inlines = [ChoiceInline]
+'''
+
+# 관리자 변경 목록(change list) 커스터마이징 (8/18)
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('question_text', 'pub_date', 'was_published_recently')
+    list_filter = ['pub_date']
+    search_fields = ['question_text']
 
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice)
