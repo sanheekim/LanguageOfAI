@@ -21,4 +21,5 @@ urlpatterns = [
     # polls의 urls.py와 views.py를 연결하려면 필요
     # myproject/urls.py에 namespace='polls'만 추가하면 오류나므로, 꼭 polls/urls.py에 app_name = 'polls' 추가할 것.
     path('polls/', include('polls.urls', namespace='polls')),
+    path('talkingnotepad/', include('talkingnotepad.urls')),
 ]
