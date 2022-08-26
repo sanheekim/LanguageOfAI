@@ -16,7 +16,11 @@ http://127.0.0.1:8000/ 로 접속이 가능하다.
 
 4. talkingnotepad 아래에 templates/talkingnotepad 폴더를 만들고
 index.html에 화면 붙인다.
-화면 연결까지는 잘 됐으니 이제 views.py 등을 세팅해서 index.html 보이게 해야 할 듯.
+
+5. 화면 연결이 안 되고 django.template.exceptions.TemplateDoesNotExist:  오류가 난다면
+myproject/settings.py 에서 INSTALLED_APPS = [ 에
+'talkingnotepad', 를 추가해준다.
+그럼 내가 만든 html 파일이 잘 보인다.
 
 -------
-5. api 적용할 예정 (일단 talking-notepad의 settings.py, urls.py 설정 했는데 namespace 관련 해서 다음에 해야 할 듯. myproject안에 polls폴더 있는 것처럼 talking-notepad도 만들어야 하나?)
+6. api 적용할 예정
