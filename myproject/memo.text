@@ -22,5 +22,10 @@ myproject/settings.py 에서 INSTALLED_APPS = [ 에
 'talkingnotepad', 를 추가해준다.
 그럼 내가 만든 html 파일이 잘 보인다.
 
--------
-6. api 적용할 예정
+6. Google Cloud Speech API 적용
+- https://webnautes.tistory.com/1247 참고해서
+json 형태의 비공개 API Key 다운로드 하고 환경변수 등록
+- tranquil-buffer-354611-1f8de5118ed9.json
+
+==============
+- Cloud SDK 설치 예정
