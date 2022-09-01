@@ -27,5 +27,8 @@ myproject/settings.py 에서 INSTALLED_APPS = [ 에
 json 형태의 비공개 API Key 다운로드 하고 환경변수 등록
 - tranquil-buffer-354611-1f8de5118ed9.json
 
+7. Cloud SDK 설치
+- 참고 : https://majjangjjang.tistory.com/163
+
 ==============
-- Cloud SDK 설치 예정
+-  예정
