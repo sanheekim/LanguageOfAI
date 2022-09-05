@@ -30,5 +30,15 @@ json 형태의 비공개 API Key 다운로드 하고 환경변수 등록
 7. Cloud SDK 설치
 - 참고 : https://majjangjjang.tistory.com/163
 
+8. https://webnautes.tistory.com/1247 참고해서
+가상환경 활성화 후 talkingnotepad 로 이동해서 Google Cloud Client Library for Python 설치
+(pip install --upgrade google-cloud-storage)
+Cloud Speech API Client Library도 설치.
+(pip install google-cloud-speech)
+
+9. 
+
+
 ==============
--  예정
+- https://webnautes.tistory.com/1247 참고해서
+10. 서비스 계정을 활성화 예정
