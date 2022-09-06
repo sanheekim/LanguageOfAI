@@ -33,12 +33,20 @@ json 형태의 비공개 API Key 다운로드 하고 환경변수 등록
 8. https://webnautes.tistory.com/1247 참고해서
 가상환경 활성화 후 talkingnotepad 로 이동해서 Google Cloud Client Library for Python 설치
 (pip install --upgrade google-cloud-storage)
+
 Cloud Speech API Client Library도 설치.
 (pip install google-cloud-speech)
+
+서비스 계정 활성화.
+(c:\google-cloud-sdk\bin\gcloud auth activate-service-account --key-file="경로\key명.json")
+
+cmd 에서 python --version 명령어 입력하면 오류 뜨기에 python38.dll 다운로드.
+마이크 사용을 위해 필요한 패키지 설치 예정.
+
 
 9. 
 
 
 ==============
 - https://webnautes.tistory.com/1247 참고해서
-10. 서비스 계정을 활성화 예정
+마이크 사용을 위해 필요한 패키지 설치 예정.
