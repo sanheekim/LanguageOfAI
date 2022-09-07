@@ -41,12 +41,13 @@ Cloud Speech API Client Library도 설치.
 (c:\google-cloud-sdk\bin\gcloud auth activate-service-account --key-file="경로\key명.json")
 
 cmd 에서 python --version 명령어 입력하면 오류 뜨기에 python38.dll 다운로드.
-마이크 사용을 위해 필요한 패키지 설치 예정.
-
+마이크 사용을 위해 필요한 패키지 설치.
+(내 python version은 3.10.5 이므로
+pyaudio도 파이썬 버전에 맞도록 cp310을 선택함.)
 
 9. 
 
 
 ==============
 - https://webnautes.tistory.com/1247 참고해서
-마이크 사용을 위해 필요한 패키지 설치 예정.
+실시간 음성인식 테스트
