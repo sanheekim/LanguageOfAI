@@ -45,9 +45,13 @@ cmd 에서 python --version 명령어 입력하면 오류 뜨기에 python38.dll
 (내 python version은 3.10.5 이므로
 pyaudio도 파이썬 버전에 맞도록 cp310을 선택함.)
 
-9. 
+9. 실시간 음성인식 테스트
+(transcribe_streaming_mic.py 다운로드)
+이후 python transcribe_streaming_mic.py 으로 실행해보기.
+(자꾸... 오류가 뜨는데?
+폴더 위치가 어디든 같은 오류 뜸. 확인 예정.)
 
 
 ==============
 - https://webnautes.tistory.com/1247 참고해서
-실시간 음성인식 테스트
+녹음 - 음성파일 생성 - 다운로드 예정
